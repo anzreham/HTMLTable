@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Document</title>
+</head>
+<body>   
+<table class="table" >
+    {% for student in students %}
+    <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Fullname</th>
+        </tr>
+      </thead>
+    <tr>
+        <td>{{ student['first_name'] }}</td>
+        <td>{{ student['last_name'] }}</td>
+        <td>{{ student['first_name'] }} - {{ student['last_name'] }}</td>
+    {% endfor %} 
+    </tr>
+</table>
+</body>
+</html>
